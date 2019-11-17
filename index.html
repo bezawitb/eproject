@@ -1,0 +1,131 @@
+
+<html>
+<head>
+<title>eproject</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+	<input type="radio" name="images" id="i1" checked>
+	<input type="radio" name="images" id="i2">
+	<input type="radio" name="images" id="i3">
+	<input type="radio" name="images" id="i4">
+	<input type="radio" name="images" id="i5">
+	<input type="radio" name="images" id="i6">
+	<input type="radio" name="images" id="i7">
+	<input type="radio" name="images" id="i8">
+	<input type="radio" name="images" id="i9">
+	<input type="radio" name="images" id="i10">
+	
+
+<div class="slide_img" id="one">
+	<img src="dm1.jpg">
+	
+		<label for="i10" class="pre"></label>
+		<label for="i2" class="nxt"></label>
+		
+</div>
+<div class="slide_img" id="two">
+	<img src="dm2.jpg">
+	
+	<label for="i1" class="pre"></label>
+	<label for="i3" class="nxt"></label>
+		
+</div>
+<div class="slide_img" id="three">
+	<img src="dm3.jpg">
+	
+		<label for="i2" class="pre"></label>
+		<label for="i4" class="nxt"></label>
+</div>
+<div class="slide_img" id="four">
+	<img src="dm4.jpg">
+	
+	<label for="i3" class="pre"></label>
+	<label for="i5" class="nxt"></label>
+	
+</div>
+<div class="slide_img" id="five">
+	<img src="dm5.jpg">
+	
+	<label for="i4" class="pre"></label>
+	<label for="i6" class="nxt"></label>
+</div>
+<div class="slide_img" id="six">
+	<img src="dm6.png">
+	
+	<label for="i5" class="pre"></label>
+	<label for="i7" class="nxt"></label>
+</div>
+<div class="slide_img" id="seven">
+	<img src="dm7.jpg">
+	
+	<label for="i6" class="pre"></label>
+	<label for="i8" class="nxt"></label>
+</div>
+<div class="slide_img" id="eight">
+	<img src="dm8.jpg">
+	
+	<label for="i7" class="pre"></label>
+	<label for="i9" class="nxt"></label>
+</div>
+
+<div class="slide_img" id="nine">
+	<img src="dm9.jpg">
+	
+	<label for="i8" class="pre"></label>
+	<label for="i10" class="nxt"></label>
+</div>
+<div class="slide_img" id="ten">
+	<img src="dm10.jpg">
+	
+	<label for="i9" class="pre"></label>
+	<label for="i1" class="nxt"></label>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="nav">
+	<label class="pags" id="pag1" for="i1"></label>
+	<label class="pags" id="pag2" for="i2"></label>
+	<label class="pags" id="pag3" for="i3"></label>
+	<label class="pags" id="pag4" for="i4"></label>
+	<label class="pags" id="pag5" for="i5"></label>
+	<label class="pags" id="pag6" for="i6"></label>
+	<label class="pags" id="pag7" for="i7"></label>
+	<label class="pags" id="pag8" for="i8"></label>
+	<label class="pags" id="pag9" for="i9"></label>
+	<label class="pags" id="pag10" for="i10"></label>
+</div>
+</div>
+	
+	
+	
+	
+	
+</body>
+<script>
+onload  = start;
+
+function start(){	
+var i = 1;
+function Move(){ 	
+	i = (i%10)+1; 
+	document.getElementById('i'+i).checked = true;
+}
+setInterval(Move,3000); 
+}
+
+
+</script>
+
+</html>
